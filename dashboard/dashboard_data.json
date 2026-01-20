@@ -1,0 +1,792 @@
+{
+  "kpis": {
+    "saldo_atual": "08:28",
+    "dias_credito": "13:06",
+    "dias_debito": "04:38",
+    "dias_trabalhados": 65
+  },
+  "evolucao": [
+    {
+      "data": "15/10/2025",
+      "saldo": 0
+    },
+    {
+      "data": "16/10/2025",
+      "saldo": 33
+    },
+    {
+      "data": "17/10/2025",
+      "saldo": 51
+    },
+    {
+      "data": "20/10/2025",
+      "saldo": 51
+    },
+    {
+      "data": "21/10/2025",
+      "saldo": 70
+    },
+    {
+      "data": "22/10/2025",
+      "saldo": 84
+    },
+    {
+      "data": "23/10/2025",
+      "saldo": 90
+    },
+    {
+      "data": "24/10/2025",
+      "saldo": 101
+    },
+    {
+      "data": "27/10/2025",
+      "saldo": 114
+    },
+    {
+      "data": "28/10/2025",
+      "saldo": 114
+    },
+    {
+      "data": "29/10/2025",
+      "saldo": 147
+    },
+    {
+      "data": "30/10/2025",
+      "saldo": 189
+    },
+    {
+      "data": "31/10/2025",
+      "saldo": 189
+    },
+    {
+      "data": "03/11/2025",
+      "saldo": 209
+    },
+    {
+      "data": "04/11/2025",
+      "saldo": 236
+    },
+    {
+      "data": "05/11/2025",
+      "saldo": 240
+    },
+    {
+      "data": "06/11/2025",
+      "saldo": 230
+    },
+    {
+      "data": "07/11/2025",
+      "saldo": 271
+    },
+    {
+      "data": "10/11/2025",
+      "saldo": 289
+    },
+    {
+      "data": "11/11/2025",
+      "saldo": 307
+    },
+    {
+      "data": "12/11/2025",
+      "saldo": 325
+    },
+    {
+      "data": "13/11/2025",
+      "saldo": 330
+    },
+    {
+      "data": "14/11/2025",
+      "saldo": 326
+    },
+    {
+      "data": "17/11/2025",
+      "saldo": 350
+    },
+    {
+      "data": "18/11/2025",
+      "saldo": 355
+    },
+    {
+      "data": "19/11/2025",
+      "saldo": 357
+    },
+    {
+      "data": "20/11/2025",
+      "saldo": 357
+    },
+    {
+      "data": "21/11/2025",
+      "saldo": 357
+    },
+    {
+      "data": "24/11/2025",
+      "saldo": 380
+    },
+    {
+      "data": "25/11/2025",
+      "saldo": 380
+    },
+    {
+      "data": "26/11/2025",
+      "saldo": 391
+    },
+    {
+      "data": "27/11/2025",
+      "saldo": 423
+    },
+    {
+      "data": "28/11/2025",
+      "saldo": 419
+    },
+    {
+      "data": "01/12/2025",
+      "saldo": 416
+    },
+    {
+      "data": "02/12/2025",
+      "saldo": 416
+    },
+    {
+      "data": "03/12/2025",
+      "saldo": 436
+    },
+    {
+      "data": "04/12/2025",
+      "saldo": 420
+    },
+    {
+      "data": "05/12/2025",
+      "saldo": 448
+    },
+    {
+      "data": "08/12/2025",
+      "saldo": 448
+    },
+    {
+      "data": "09/12/2025",
+      "saldo": 468
+    },
+    {
+      "data": "10/12/2025",
+      "saldo": 501
+    },
+    {
+      "data": "11/12/2025",
+      "saldo": 542
+    },
+    {
+      "data": "12/12/2025",
+      "saldo": 577
+    },
+    {
+      "data": "15/12/2025",
+      "saldo": 597
+    },
+    {
+      "data": "16/12/2025",
+      "saldo": 612
+    },
+    {
+      "data": "17/12/2025",
+      "saldo": 611
+    },
+    {
+      "data": "18/12/2025",
+      "saldo": 623
+    },
+    {
+      "data": "19/12/2025",
+      "saldo": 383
+    },
+    {
+      "data": "22/12/2025",
+      "saldo": 383
+    },
+    {
+      "data": "23/12/2025",
+      "saldo": 383
+    },
+    {
+      "data": "24/12/2025",
+      "saldo": 383
+    },
+    {
+      "data": "25/12/2025",
+      "saldo": 383
+    },
+    {
+      "data": "26/12/2025",
+      "saldo": 383
+    },
+    {
+      "data": "29/12/2025",
+      "saldo": 383
+    },
+    {
+      "data": "30/12/2025",
+      "saldo": 383
+    },
+    {
+      "data": "31/12/2025",
+      "saldo": 383
+    },
+    {
+      "data": "01/01/2026",
+      "saldo": 383
+    },
+    {
+      "data": "02/01/2026",
+      "saldo": 383
+    },
+    {
+      "data": "05/01/2026",
+      "saldo": 387
+    },
+    {
+      "data": "06/01/2026",
+      "saldo": 394
+    },
+    {
+      "data": "07/01/2026",
+      "saldo": 415
+    },
+    {
+      "data": "08/01/2026",
+      "saldo": 415
+    },
+    {
+      "data": "09/01/2026",
+      "saldo": 420
+    },
+    {
+      "data": "12/01/2026",
+      "saldo": 508
+    },
+    {
+      "data": "13/01/2026",
+      "saldo": 508
+    }
+  ],
+  "detalhes": [
+    {
+      "data": "15/10/2025",
+      "entrada": "",
+      "saida_almoco": "",
+      "volta_almoco": "",
+      "saida": "",
+      "banco_dia": "00:00"
+    },
+    {
+      "data": "16/10/2025",
+      "entrada": "06:56",
+      "saida_almoco": "13:36",
+      "volta_almoco": "14:57",
+      "saida": "16:29",
+      "banco_dia": "00:33"
+    },
+    {
+      "data": "17/10/2025",
+      "entrada": "06:59",
+      "saida_almoco": "13:42",
+      "volta_almoco": "14:42",
+      "saida": "16:17",
+      "banco_dia": "00:18"
+    },
+    {
+      "data": "20/10/2025",
+      "entrada": "06:55",
+      "saida_almoco": "13:27",
+      "volta_almoco": "14:32",
+      "saida": "16:00",
+      "banco_dia": "00:00"
+    },
+    {
+      "data": "21/10/2025",
+      "entrada": "06:58",
+      "saida_almoco": "13:30",
+      "volta_almoco": "14:32",
+      "saida": "16:17",
+      "banco_dia": "00:19"
+    },
+    {
+      "data": "22/10/2025",
+      "entrada": "07:00",
+      "saida_almoco": "12:11",
+      "volta_almoco": "13:05",
+      "saida": "16:08",
+      "banco_dia": "00:14"
+    },
+    {
+      "data": "23/10/2025",
+      "entrada": "07:00",
+      "saida_almoco": "13:27",
+      "volta_almoco": "14:27",
+      "saida": "16:06",
+      "banco_dia": "00:06"
+    },
+    {
+      "data": "24/10/2025",
+      "entrada": "07:04",
+      "saida_almoco": "13:28",
+      "volta_almoco": "14:28",
+      "saida": "16:15",
+      "banco_dia": "00:11"
+    },
+    {
+      "data": "27/10/2025",
+      "entrada": "06:59",
+      "saida_almoco": "13:21",
+      "volta_almoco": "14:35",
+      "saida": "16:12",
+      "banco_dia": "00:13"
+    },
+    {
+      "data": "28/10/2025",
+      "entrada": "07:02",
+      "saida_almoco": "12:17",
+      "volta_almoco": "13:23",
+      "saida": "16:08",
+      "banco_dia": "00:00"
+    },
+    {
+      "data": "29/10/2025",
+      "entrada": "07:00",
+      "saida_almoco": "14:12",
+      "volta_almoco": "15:24",
+      "saida": "16:21",
+      "banco_dia": "00:33"
+    },
+    {
+      "data": "30/10/2025",
+      "entrada": "07:02",
+      "saida_almoco": "13:20",
+      "volta_almoco": "14:20",
+      "saida": "15:20",
+      "banco_dia": "00:42"
+    },
+    {
+      "data": "31/10/2025",
+      "entrada": "",
+      "saida_almoco": "",
+      "volta_almoco": "",
+      "saida": "",
+      "banco_dia": "00:00"
+    },
+    {
+      "data": "03/11/2025",
+      "entrada": "06:59",
+      "saida_almoco": "13:35",
+      "volta_almoco": "14:35",
+      "saida": "16:19",
+      "banco_dia": "00:20"
+    },
+    {
+      "data": "04/11/2025",
+      "entrada": "06:59",
+      "saida_almoco": "12:02",
+      "volta_almoco": "13:05",
+      "saida": "16:26",
+      "banco_dia": "00:27"
+    },
+    {
+      "data": "05/11/2025",
+      "entrada": "07:03",
+      "saida_almoco": "12:30",
+      "volta_almoco": "13:30",
+      "saida": "16:07",
+      "banco_dia": "00:04"
+    },
+    {
+      "data": "06/11/2025",
+      "entrada": "07:05",
+      "saida_almoco": "13:24",
+      "volta_almoco": "14:36",
+      "saida": "16:07",
+      "banco_dia": "-00:10"
+    },
+    {
+      "data": "07/11/2025",
+      "entrada": "07:01",
+      "saida_almoco": "13:22",
+      "volta_almoco": "14:24",
+      "saida": "16:42",
+      "banco_dia": "00:41"
+    },
+    {
+      "data": "10/11/2025",
+      "entrada": "06:59",
+      "saida_almoco": "13:15",
+      "volta_almoco": "14:14",
+      "saida": "16:17",
+      "banco_dia": "00:18"
+    },
+    {
+      "data": "11/11/2025",
+      "entrada": "07:03",
+      "saida_almoco": "12:26",
+      "volta_almoco": "13:26",
+      "saida": "16:21",
+      "banco_dia": "00:18"
+    },
+    {
+      "data": "12/11/2025",
+      "entrada": "07:11",
+      "saida_almoco": "12:16",
+      "volta_almoco": "13:34",
+      "saida": "16:15",
+      "banco_dia": "00:18"
+    },
+    {
+      "data": "13/11/2025",
+      "entrada": "07:09",
+      "saida_almoco": "13:25",
+      "volta_almoco": "14:25",
+      "saida": "16:14",
+      "banco_dia": "00:05"
+    },
+    {
+      "data": "14/11/2025",
+      "entrada": "07:19",
+      "saida_almoco": "13:37",
+      "volta_almoco": "14:37",
+      "saida": "16:15",
+      "banco_dia": "-00:04"
+    },
+    {
+      "data": "17/11/2025",
+      "entrada": "07:03",
+      "saida_almoco": "13:17",
+      "volta_almoco": "14:25",
+      "saida": "16:27",
+      "banco_dia": "00:24"
+    },
+    {
+      "data": "18/11/2025",
+      "entrada": "07:09",
+      "saida_almoco": "12:15",
+      "volta_almoco": "13:17",
+      "saida": "16:16",
+      "banco_dia": "00:05"
+    },
+    {
+      "data": "19/11/2025",
+      "entrada": "07:13",
+      "saida_almoco": "13:52",
+      "volta_almoco": "15:00",
+      "saida": "16:23",
+      "banco_dia": "00:02"
+    },
+    {
+      "data": "20/11/2025",
+      "entrada": "",
+      "saida_almoco": "",
+      "volta_almoco": "",
+      "saida": "",
+      "banco_dia": "00:00"
+    },
+    {
+      "data": "21/11/2025",
+      "entrada": "",
+      "saida_almoco": "",
+      "volta_almoco": "",
+      "saida": "",
+      "banco_dia": "00:00"
+    },
+    {
+      "data": "24/11/2025",
+      "entrada": "06:57",
+      "saida_almoco": "13:40",
+      "volta_almoco": "14:40",
+      "saida": "16:20",
+      "banco_dia": "00:23"
+    },
+    {
+      "data": "25/11/2025",
+      "entrada": "07:00",
+      "saida_almoco": "12:31",
+      "volta_almoco": "13:31",
+      "saida": "16:00",
+      "banco_dia": "00:00"
+    },
+    {
+      "data": "26/11/2025",
+      "entrada": "07:00",
+      "saida_almoco": "11:53",
+      "volta_almoco": "12:59",
+      "saida": "16:11",
+      "banco_dia": "00:11"
+    },
+    {
+      "data": "27/11/2025",
+      "entrada": "07:03",
+      "saida_almoco": "12:07",
+      "volta_almoco": "13:08",
+      "saida": "16:35",
+      "banco_dia": "00:32"
+    },
+    {
+      "data": "28/11/2025",
+      "entrada": "07:03",
+      "saida_almoco": "13:48",
+      "volta_almoco": "14:57",
+      "saida": "16:08",
+      "banco_dia": "-00:04"
+    },
+    {
+      "data": "01/12/2025",
+      "entrada": "07:09",
+      "saida_almoco": "12:00",
+      "volta_almoco": "13:02",
+      "saida": "16:08",
+      "banco_dia": "-00:03"
+    },
+    {
+      "data": "02/12/2025",
+      "entrada": "07:12",
+      "saida_almoco": "13:13",
+      "volta_almoco": "14:13",
+      "saida": "16:12",
+      "banco_dia": "00:00"
+    },
+    {
+      "data": "03/12/2025",
+      "entrada": "07:10",
+      "saida_almoco": "14:36",
+      "volta_almoco": "15:36",
+      "saida": "16:35",
+      "banco_dia": "00:20"
+    },
+    {
+      "data": "04/12/2025",
+      "entrada": "07:22",
+      "saida_almoco": "12:09",
+      "volta_almoco": "13:07",
+      "saida": "16:06",
+      "banco_dia": "-00:16"
+    },
+    {
+      "data": "05/12/2025",
+      "entrada": "07:09",
+      "saida_almoco": "12:39",
+      "volta_almoco": "13:31",
+      "saida": "16:29",
+      "banco_dia": "00:28"
+    },
+    {
+      "data": "08/12/2025",
+      "entrada": "",
+      "saida_almoco": "",
+      "volta_almoco": "",
+      "saida": "",
+      "banco_dia": "00:00"
+    },
+    {
+      "data": "09/12/2025",
+      "entrada": "07:00",
+      "saida_almoco": "12:00",
+      "volta_almoco": "13:00",
+      "saida": "16:20",
+      "banco_dia": "00:20"
+    },
+    {
+      "data": "10/12/2025",
+      "entrada": "07:00",
+      "saida_almoco": "12:19",
+      "volta_almoco": "13:19",
+      "saida": "16:33",
+      "banco_dia": "00:33"
+    },
+    {
+      "data": "11/12/2025",
+      "entrada": "06:59",
+      "saida_almoco": "12:08",
+      "volta_almoco": "13:10",
+      "saida": "16:40",
+      "banco_dia": "00:41"
+    },
+    {
+      "data": "12/12/2025",
+      "entrada": "07:05",
+      "saida_almoco": "12:00",
+      "volta_almoco": "13:00",
+      "saida": "16:40",
+      "banco_dia": "00:35"
+    },
+    {
+      "data": "15/12/2025",
+      "entrada": "07:01",
+      "saida_almoco": "12:22",
+      "volta_almoco": "14:19",
+      "saida": "16:21",
+      "banco_dia": "00:20"
+    },
+    {
+      "data": "16/12/2025",
+      "entrada": "06:58",
+      "saida_almoco": "13:14",
+      "volta_almoco": "14:16",
+      "saida": "16:13",
+      "banco_dia": "00:15"
+    },
+    {
+      "data": "17/12/2025",
+      "entrada": "07:14",
+      "saida_almoco": "12:47",
+      "volta_almoco": "13:48",
+      "saida": "16:14",
+      "banco_dia": "-00:01"
+    },
+    {
+      "data": "18/12/2025",
+      "entrada": "07:01",
+      "saida_almoco": "12:00",
+      "volta_almoco": "13:00",
+      "saida": "16:13",
+      "banco_dia": "00:12"
+    },
+    {
+      "data": "19/12/2025",
+      "entrada": "07:00",
+      "saida_almoco": "11:00",
+      "volta_almoco": "",
+      "saida": "",
+      "banco_dia": "-04:00"
+    },
+    {
+      "data": "22/12/2025",
+      "entrada": "",
+      "saida_almoco": "",
+      "volta_almoco": "",
+      "saida": "",
+      "banco_dia": "00:00"
+    },
+    {
+      "data": "23/12/2025",
+      "entrada": "",
+      "saida_almoco": "",
+      "volta_almoco": "",
+      "saida": "",
+      "banco_dia": "00:00"
+    },
+    {
+      "data": "24/12/2025",
+      "entrada": "",
+      "saida_almoco": "",
+      "volta_almoco": "",
+      "saida": "",
+      "banco_dia": "00:00"
+    },
+    {
+      "data": "25/12/2025",
+      "entrada": "",
+      "saida_almoco": "",
+      "volta_almoco": "",
+      "saida": "",
+      "banco_dia": "00:00"
+    },
+    {
+      "data": "26/12/2025",
+      "entrada": "",
+      "saida_almoco": "",
+      "volta_almoco": "",
+      "saida": "",
+      "banco_dia": "00:00"
+    },
+    {
+      "data": "29/12/2025",
+      "entrada": "",
+      "saida_almoco": "",
+      "volta_almoco": "",
+      "saida": "",
+      "banco_dia": "00:00"
+    },
+    {
+      "data": "30/12/2025",
+      "entrada": "",
+      "saida_almoco": "",
+      "volta_almoco": "",
+      "saida": "",
+      "banco_dia": "00:00"
+    },
+    {
+      "data": "31/12/2025",
+      "entrada": "",
+      "saida_almoco": "",
+      "volta_almoco": "",
+      "saida": "",
+      "banco_dia": "00:00"
+    },
+    {
+      "data": "01/01/2026",
+      "entrada": "",
+      "saida_almoco": "",
+      "volta_almoco": "",
+      "saida": "",
+      "banco_dia": "00:00"
+    },
+    {
+      "data": "02/01/2026",
+      "entrada": "",
+      "saida_almoco": "",
+      "volta_almoco": "",
+      "saida": "",
+      "banco_dia": "00:00"
+    },
+    {
+      "data": "05/01/2026",
+      "entrada": "06:56",
+      "saida_almoco": "12:00",
+      "volta_almoco": "13:00",
+      "saida": "16:00",
+      "banco_dia": "00:04"
+    },
+    {
+      "data": "06/01/2026",
+      "entrada": "07:06",
+      "saida_almoco": "13:23",
+      "volta_almoco": "14:23",
+      "saida": "16:13",
+      "banco_dia": "00:07"
+    },
+    {
+      "data": "07/01/2026",
+      "entrada": "07:00",
+      "saida_almoco": "13:05",
+      "volta_almoco": "14:05",
+      "saida": "16:21",
+      "banco_dia": "00:21"
+    },
+    {
+      "data": "08/01/2026",
+      "entrada": "07:00",
+      "saida_almoco": "12:24",
+      "volta_almoco": "13:24",
+      "saida": "16:00",
+      "banco_dia": "00:00"
+    },
+    {
+      "data": "09/01/2026",
+      "entrada": "07:00",
+      "saida_almoco": "12:16",
+      "volta_almoco": "13:13",
+      "saida": "16:02",
+      "banco_dia": "00:05"
+    },
+    {
+      "data": "12/01/2026",
+      "entrada": "07:02",
+      "saida_almoco": "12:38",
+      "volta_almoco": "13:38",
+      "saida": "17:30",
+      "banco_dia": "01:28"
+    },
+    {
+      "data": "13/01/2026",
+      "entrada": "07:21",
+      "saida_almoco": "",
+      "volta_almoco": "",
+      "saida": "",
+      "banco_dia": "00:00"
+    }
+  ]
+}
