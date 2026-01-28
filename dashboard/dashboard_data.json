@@ -1,9 +1,9 @@
 {
   "kpis": {
-    "saldo_atual": "08:28",
+    "saldo_atual": "07:33",
     "dias_credito": "13:06",
-    "dias_debito": "04:38",
-    "dias_trabalhados": 65
+    "dias_debito": "05:33",
+    "dias_trabalhados": 66
   },
   "evolucao": [
     {
@@ -265,6 +265,10 @@
     {
       "data": "13/01/2026",
       "saldo": 508
+    },
+    {
+      "data": "14/01/2026",
+      "saldo": 453
     }
   ],
   "detalhes": [
@@ -783,10 +787,18 @@
     {
       "data": "13/01/2026",
       "entrada": "07:21",
-      "saida_almoco": "",
-      "volta_almoco": "",
-      "saida": "",
+      "saida_almoco": "12:00",
+      "volta_almoco": "13:00",
+      "saida": "16:21",
       "banco_dia": "00:00"
+    },
+    {
+      "data": "14/01/2026",
+      "entrada": "08:00",
+      "saida_almoco": "11:34",
+      "volta_almoco": "12:34",
+      "saida": "16:05",
+      "banco_dia": "-00:55"
     }
   ]
 }

@@ -59,6 +59,23 @@ def acessar_marcacoes(driver):
         pass
 
 
+def extrair_nome_usuario(driver):
+    """
+    Extrai o nome do usuário do elemento HTML.
+    Procura por: <h2 class="employee-full-name">JOAO PEDRO DA SILVEIRA</h2>
+    """
+    try:
+        nome_element = driver.find_element(By.CSS_SELECTOR, "h2.employee-full-name")
+        nome = nome_element.text.strip()
+        if nome:
+            print(f"👤 Usuário: {nome}")
+            return nome
+    except:
+        pass
+    
+    return "Usuário Desconhecido"
+
+
 # ==================================================
 # NAVEGAÇÃO DE PERÍODO
 # ==================================================
@@ -201,6 +218,33 @@ def extrair_registros(driver):
             except:
                 break
 
+        # ===== EXTRAÇÃO DE ABONAS (FÉRIAS, ATESTADO, ETC) =====
+        abonas_min = 0
+        try:
+            dia_row = driver.find_element(By.XPATH, f"//span[@id='dia_{data_iso}_data']/ancestor::tr")
+            
+            # Procura por todos os spans que contêm horas de abono
+            # Formatos esperados: "02:00 - XX Férias", "03:00 - XX Atestado"
+            termos_abono_para_extrair = ["Férias", "Atestado", "Feriado"]
+            
+            for termo in termos_abono_para_extrair:
+                situacoes_spans = dia_row.find_elements(By.XPATH, f".//span[contains(text(), '{termo}')]")
+                for situacao in situacoes_spans:
+                    texto = situacao.text.strip()
+                    # Formato: "02:00 - XX Férias"
+                    partes = texto.split(" - ")
+                    if len(partes) >= 1:
+                        tempo_str = partes[0].strip()
+                        if ":" in tempo_str:
+                            try:
+                                h, m = tempo_str.split(":")
+                                abonas_min += int(h) * 60 + int(m)
+                                print(f"    🎁 Abono ({termo}): +{tempo_str}")
+                            except:
+                                pass
+        except Exception as e:
+            pass
+
         # ===== EXTRAÇÃO DO BANCO DO DIA (DIRETO DO SENIOR) =====
         banco_do_dia_min = 0
         banco_encontrado = False
@@ -244,16 +288,18 @@ def extrair_registros(driver):
 
         # Se não encontrou no site, calcula manualmente
         if not banco_encontrado:
-            if marcacoes and not situacao_abonada:
-                minutos_trabalhados = calcular_minutos_trabalhados(" | ".join(marcacoes))
-                # Se trabalhou, calcula a diferença
-                if minutos_trabalhados > 0:
-                    banco_do_dia_min = minutos_trabalhados - carga_horaria_min
-                    if banco_do_dia_min != 0:
+            minutos_trabalhados = calcular_minutos_trabalhados(" | ".join(marcacoes)) if marcacoes else 0
+            # IMPORTANTE: Horas creditadas = Trabalho + Abonas
+            # Abonas (férias, atestado) contam como horas trabalhadas para o banco
+            horas_creditadas = minutos_trabalhados + abonas_min
+            
+            if horas_creditadas > 0:
+                banco_do_dia_min = horas_creditadas - carga_horaria_min
+                if banco_do_dia_min != 0:
+                    if abonas_min > 0:
+                        print(f"    🔢 Calculado: {minutos_para_hhmm(minutos_trabalhados)} (trabalho) + {minutos_para_hhmm(abonas_min)} (abono) = {minutos_para_hhmm(banco_do_dia_min)}")
+                    else:
                         print(f"    🔢 Calculado: {minutos_para_hhmm(banco_do_dia_min)}")
-            # Se for abonado e não tiver marcações (férias), banco é 0 (ou o que o sistema informou)
-            elif situacao_abonada and not marcacoes:
-                banco_do_dia_min = 0
 
         # ===== EXTRAÇÃO DO SALDO ACUMULADO (DIRETO DO SENIOR) =====
         saldo_acumulado_min = None
@@ -287,6 +333,7 @@ def extrair_registros(driver):
                 "Data": data_humana,
                 "Marcações": " | ".join(marcacoes) if marcacoes else "",
                 "Carga Horária (min)": carga_horaria_min,
+                "Abonas (min)": abonas_min,
                 "Banco do Dia (min)": banco_do_dia_min
             }
             
@@ -428,7 +475,7 @@ def calcular_banco_do_dia(row):
 # ==================================================
 # PLANILHA + DASHBOARD
 # ==================================================
-def gerar_dashboard_json(df):
+def gerar_dashboard_json(df, nome_usuario="Usuário"):
     # Garante que o DataFrame está ordenado cronologicamente
     df = df.sort_values("Data ISO").reset_index(drop=True)
     
@@ -458,6 +505,8 @@ def gerar_dashboard_json(df):
         })
 
     data = {
+        "usuario": nome_usuario,
+        "data_relatorio": datetime.now().strftime("%d/%m/%Y %H:%M:%S"),
         "kpis": {
             "saldo_atual": df["Saldo Acumulado"].iloc[-1],
             "dias_credito": minutos_para_hhmm(int(credito_min)),
@@ -478,7 +527,7 @@ def gerar_dashboard_json(df):
 
 
 
-def gerar_planilha(registros):
+def gerar_planilha(registros, nome_usuario="Usuário"):
     df = pd.DataFrame(registros)
 
     if df.empty:
@@ -486,6 +535,10 @@ def gerar_planilha(registros):
         return
 
     df["Minutos Trabalhados"] = df["Marcações"].apply(calcular_minutos_trabalhados)
+    
+    # Garante que coluna de abonas existe
+    if "Abonas (min)" not in df.columns:
+        df["Abonas (min)"] = 0
     
     # NÃO REMOVER DIAS SEM MARCAÇÃO! 
     # Isso escondia as faltas (dias com 0 trabalhado e carga > 0).
@@ -498,7 +551,11 @@ def gerar_planilha(registros):
     # 👉 USA O BANCO DO DIA EXTRAÍDO DO SENIOR (não calcula!)
     # Se não tiver banco do dia extraído, calcula
     if "Banco do Dia (min)" not in df.columns:
-        df["Banco do Dia (min)"] = df.apply(calcular_banco_do_dia, axis=1)
+        # Calcula considerando: Horas Creditadas = Trabalhado + Abonas
+        df["Banco do Dia (min)"] = df.apply(
+            lambda row: (row["Minutos Trabalhados"] + row["Abonas (min)"]) - row.get("Carga Horária (min)", CARGA_DIARIA_PADRAO_MINUTOS),
+            axis=1
+        )
     
     # 👉 USA O SALDO ACUMULADO EXTRAÍDO DO SENIOR
     # Se não tiver saldo acumulado extraído, calcula com cumsum
@@ -509,28 +566,30 @@ def gerar_planilha(registros):
         print("✅ Saldo acumulado extraído do Senior!")
 
     df["Horas Trabalhadas"] = df["Minutos Trabalhados"].apply(minutos_para_hhmm)
+    df["Abonas"] = df["Abonas (min)"].apply(minutos_para_hhmm)
     df["Carga Horária"] = df["Carga Horária (min)"].apply(minutos_para_hhmm)
     df["Banco do Dia"] = df["Banco do Dia (min)"].apply(minutos_para_hhmm)
     df["Saldo Acumulado"] = df["Saldo Acumulado (min)"].apply(minutos_para_hhmm)
 
     df_final = df.drop(columns=[
         "Minutos Trabalhados",
+        "Abonas (min)",
         "Carga Horária (min)",
         "Banco do Dia (min)",
         "Saldo Acumulado (min)"
     ])
 
     df_final.to_excel("controle_banco_horas.xlsx", index=False)
-    gerar_dashboard_json(df_final)
+    gerar_dashboard_json(df_final, nome_usuario)
 
     print("📊 Planilha e dashboard gerados com dados REAIS do Senior!")
 
 
 
 # ==================================================
-# MAIN
+# MAIN (Para uso direto em terminal)
 # ==================================================
-def main():
+def main_cli():
     print("\n=== Senior Ponto → Controle de Banco de Horas ===")
 
     usuario = input("Usuário: ")
@@ -578,4 +637,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main_cli()

@@ -1,0 +1,237 @@
+╔════════════════════════════════════════════════════════════════════╗
+║                                                                    ║
+║               ⭐ COMECE AQUI - VERSÃO 2.1 WEB ⭐                  ║
+║                                                                    ║
+║            Senior Ponto - Controle de Banco de Horas             ║
+║                                                                    ║
+╚════════════════════════════════════════════════════════════════════╝
+
+
+🎯 DUAS OPÇÕES PARA VOCÊ:
+════════════════════════════════════════════════════════════════════
+
+OPÇÃO 1 - WEB (RECOMENDADO) ⭐⭐⭐
+┌────────────────────────────────────┐
+│ Duplo clique em: iniciar_web.bat   │
+│                                    │
+│ ✨ Interface moderna               │
+│ 📱 Responsiva                      │
+│ 📊 Dashboard integrado             │
+│ 🌐 No navegador                    │
+│ ⚡ Muito rápida                    │
+│                                    │
+│ Para: Usuários modernos            │
+│ Ideal: Para visualizar dados       │
+└────────────────────────────────────┘
+
+OPÇÃO 2 - DESKTOP
+┌────────────────────────────────────┐
+│ Duplo clique em: iniciar.bat       │
+│                                    │
+│ 🖥️ Janela desktop                 │
+│ 💻 Interface local                │
+│ 🔧 Mais controle                  │
+│ ⚙️ Tradicional                     │
+│                                    │
+│ Para: Usuários básicos             │
+│ Ideal: Sem navegador               │
+└────────────────────────────────────┘
+
+
+⚡ 3 PASSOS RÁPIDOS (WEB):
+════════════════════════════════════════════════════════════════════
+
+1️⃣ DUPLO CLIQUE EM: iniciar_web.bat
+   └─ Navegador abre automaticamente
+
+2️⃣ PREENCHA O FORMULÁRIO:
+   ├─ Usuário: seu login do Senior
+   ├─ Senha: sua senha
+   ├─ Mês até: 11 (ou qual quiser)
+   └─ Ano até: 2025 (ou qual quiser)
+
+3️⃣ CLIQUE EM: 🚀 PROCESSAR
+   └─ Aguarde 2-5 minutos
+
+
+📊 VEJA O RESULTADO:
+════════════════════════════════════════════════════════════════════
+
+Após processar, você terá acesso a:
+
+🏠 INICIAL
+   └─ Informações gerais e status
+
+📊 DASHBOARD ⭐ (NOVO!)
+   ├─ Saldo atual
+   ├─ Dias de crédito/débito
+   ├─ Gráfico visual
+   └─ Tabela de detalhes
+
+📋 DADOS
+   ├─ Tabela completa
+   ├─ Estatísticas
+   └─ Download como CSV
+
+⚙️ CONFIGURAÇÕES
+   ├─ Documentação
+   ├─ FAQ
+   └─ Informações do sistema
+
+
+✨ NOVIDADES DA VERSÃO 2.1 WEB:
+════════════════════════════════════════════════════════════════════
+
+✅ Interface 100% web
+   → Tudo no navegador
+   → Sem janelas flutuantes
+
+✅ Dashboard integrado
+   → Veja gráficos imediatamente
+   → Não precisa abrir outro arquivo
+
+✅ Menu sidebar
+   → Navegação fácil e rápida
+   → Tudo centralizado
+
+✅ Responsivo
+   → Funciona em celular
+   → Funciona em tablet
+   → Funciona em desktop
+
+✅ Mais rápido
+   → Menos clicks
+   → Interface otimizada
+
+✅ Mais bonito
+   → Design profissional
+   → Cores agradáveis
+   → Totalmente moderno
+
+
+🔄 COMPARAÇÃO:
+════════════════════════════════════════════════════════════════════
+
+ANTES (v2.0 Desktop):         AGORA (v2.1 Web):
+├─ Interface em janela         ├─ Interface web
+├─ Dashboard separado          ├─ Dashboard integrado
+├─ Múltiplos cliques          ├─ Poucos cliques
+├─ Menos responsivo           ├─ Totalmente responsivo
+└─ Só no PC                   └─ PC, tablet, celular
+
+
+⚡ COMO FUNCIONA:
+════════════════════════════════════════════════════════════════════
+
+1. Duplo clique em iniciar_web.bat
+   ↓
+2. Streamlit inicia (instala se necessário)
+   ↓
+3. Navegador abre em http://localhost:8501
+   ↓
+4. Interface web carrega
+   ↓
+5. Você preenche formulário
+   ↓
+6. Clica PROCESSAR
+   ↓
+7. Sistema extrai dados do Senior
+   ↓
+8. Dashboard atualiza automaticamente
+   ↓
+9. Você vê gráficos e tabelas
+
+
+🌐 VOCÊ VERÁ NO NAVEGADOR:
+════════════════════════════════════════════════════════════════════
+
+Topo:
+  🏢 Senior Ponto
+  Controle de Banco de Horas
+
+Sidebar esquerdo:
+  Menu (4 opções)
+  Versão 2.1 - Web
+
+Conteúdo central:
+  (Muda conforme menu selecionado)
+
+Rodapé:
+  Informações de versão
+
+
+📊 NO DASHBOARD VOCÊ VERÁ:
+════════════════════════════════════════════════════════════════════
+
+KPIs (Métricas principais):
+  📈 Saldo Atual: +00:35
+  💰 Dias Crédito: +05:00
+  💸 Dias Débito: -02:00
+  📅 Dias Trabalhados: 22
+
+Gráfico (Evolução do saldo):
+  [Gráfico de linha mostrando evolução]
+
+Tabela (Detalhes diários):
+  Data | Entrada | Saída | Banco | Saldo
+
+
+✅ REQUISITOS MÍNIMOS:
+════════════════════════════════════════════════════════════════════
+
+Obrigatório:
+  ✓ Python 3.8+
+  ✓ Chrome ou Chromium
+
+Automático:
+  ✓ Streamlit (instala sozinho)
+  ✓ Pandas (instala sozinho)
+  ✓ Selenium (já tem)
+
+
+❓ PERGUNTAS FREQUENTES:
+════════════════════════════════════════════════════════════════════
+
+P: Qual versão devo usar?
+R: WEB (iniciar_web.bat) é mais moderna e melhor!
+
+P: Por quanto tempo demora?
+R: 1-5 minutos dependendo de quantos meses
+
+P: É seguro?
+R: Sim! Tudo fica local no seu PC
+
+P: Preciso instalar algo?
+R: Não! Click em iniciar_web.bat que instala tudo
+
+P: Posso compartilhar?
+R: Sim! Envie os arquivos para outro PC
+
+P: Funciona em celular?
+R: Sim, mas precisa compartilhar a rede
+
+
+🚀 PRÓXIMA AÇÃO:
+════════════════════════════════════════════════════════════════════
+
+Escolha uma opção:
+
+OPÇÃO 1 - Começar agora com WEB:
+  👉 Duplo clique em: iniciar_web.bat
+
+OPÇÃO 2 - Ver mais documentação:
+  👉 Leia: README_WEB.txt
+
+OPÇÃO 3 - Usar versão desktop:
+  👉 Duplo clique em: iniciar.bat
+
+
+════════════════════════════════════════════════════════════════════
+
+Versão: 2.1 Web
+Data: Janeiro 2026
+Status: ✅ PRONTO PARA USO
+
+Bom uso! 🚀
+
+════════════════════════════════════════════════════════════════════
