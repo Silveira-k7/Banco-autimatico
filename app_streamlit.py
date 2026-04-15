@@ -15,7 +15,15 @@ from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph, 
 from reportlab.lib.units import inch
 
 
+def normalizar_colunas_relatorio(df):
+    return df.rename(columns={
+        "Marcações": "Marcacoes",
+        "Carga Horária": "Carga Horaria",
+    })
+
+
 def gerar_pdf(df, nome_usuario, periodo_inicio, periodo_fim):
+    df = normalizar_colunas_relatorio(df)
     buffer = BytesIO()
     doc = SimpleDocTemplate(buffer, pagesize=landscape(A4), rightMargin=20, leftMargin=20, topMargin=40, bottomMargin=20)
     elements = []
@@ -436,6 +444,7 @@ if pagina == "Inicial":
         if not usuario or not senha:
             st.error("Usuario e senha sao obrigatorios")
         else:
+            driver = None
             try:
                 progresso = st.progress(0)
                 status = st.status("Processando...", expanded=True)
@@ -499,6 +508,12 @@ if pagina == "Inicial":
 
             except Exception as e:
                 st.error(f"Erro: {str(e)}")
+            finally:
+                if driver is not None:
+                    try:
+                        driver.quit()
+                    except Exception:
+                        pass
 
 # PAGINA DASHBOARD
 elif pagina == "Dashboard":

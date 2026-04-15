@@ -1,5 +1,6 @@
 pandas
 selenium
-openpyxlstreamlit
+openpyxl
+streamlit
 reportlab
 plotly
